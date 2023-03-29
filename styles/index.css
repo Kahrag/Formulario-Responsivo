@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"); /* Zerando os padroes */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+/* Configuracao do body e main */
+body {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../img/Fundo.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+  /* configuracao do logo e texto */
+  /* configuracao do formulario e botao */
+  /* configuracao rodape */
+}
+body .containerGeral {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 80%;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem black;
+  position: relative;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  body .containerGeral {
+    width: 100%;
+  }
+}
+body .containerLogo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  body .containerLogo {
+    display: none;
+  }
+}
+body .containerLogo .containerLogoImg {
+  width: 100%;
+  height: 50%;
+}
+body .containerLogo .containerLogoImg img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 10rem;
+}
+body .containerLogo .containerLogoTexto {
+  width: 100%;
+  height: 50%;
+}
+body .containerLogo .containerLogoTexto h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem 0;
+  text-decoration: underline;
+  letter-spacing: 0.1rem;
+  color: white;
+}
+body .containerForm {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  body .containerForm {
+    width: 100%;
+  }
+}
+body .containerForm .containerLogoFlutuante {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 20%;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  body .containerForm .containerLogoFlutuante {
+    visibility: visible;
+  }
+}
+body .containerForm form {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70%;
+}
+body .containerForm form .containerLogin {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  padding: 1rem;
+  text-align: center;
+}
+body .containerForm form .containerLogin h2 {
+  color: white;
+  letter-spacing: 0.1rem;
+  font-size: 2rem;
+}
+body .containerForm form .containerLogin h2::first-letter {
+  color: red;
+  text-transform: uppercase;
+}
+body .containerForm form input {
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 1rem;
+  outline: none;
+}
+body .containerForm form input::-moz-placeholder {
+  text-align: center;
+}
+body .containerForm form input::placeholder {
+  text-align: center;
+}
+body .containerForm form p {
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+}
+body .containerForm form p:hover {
+  cursor: pointer;
+}
+body .containerForm form .btn {
+  padding: 1rem 2rem;
+  margin-top: 2rem;
+  border-radius: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: 0.1rem;
+  background-color: rgb(16, 173, 225);
+}
+body .containerForm form .btn:hover {
+  cursor: pointer;
+}
+body .containerFt {
+  width: 100%;
+  height: 2rem;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+}
+body .containerFt p {
+  color: white;
+  letter-spacing: 0.1rem;
+}/*# sourceMappingURL=index.css.map */

@@ -1,0 +1,157 @@
+
+/* Zerando os padroes */
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+/* Configuracao do body e main */
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(74, 74, 74);
+    font-family: 'Roboto', sans-serif;
+}
+.containerGeral{
+    width: 50%;
+    height: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(222, 222, 222);
+    border-radius: 1rem;
+    box-shadow: 0 0 2rem black;
+}
+
+/* configuracao do logo e texto */
+.containerLogo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerLogoImg{
+    width: 100%;
+    height: 50%;
+}
+.containerLogoImg img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    top: 10rem;
+}
+.containerLogoTexto{
+    width: 100%;
+    height: 50%;
+}
+.containerLogoTexto h1{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem 0;
+    text-decoration: underline;
+    letter-spacing: .1rem;
+}
+
+/* configuracao do formulario e botao */
+.containerForm{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.containerForm form{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerLogin{
+    width: 100%;
+    height: auto;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/* i{
+    color: white;
+} */
+.containerLogin h2{
+    color: white;
+    letter-spacing: .1rem;
+    font-size: 2rem;
+}
+.containerLogin h2::first-letter{
+    color: red;
+    text-transform: uppercase;
+}
+
+.containerForm input{
+    padding: 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    outline: none;
+}
+.containerForm form p{
+    color: white;
+    font-weight: 600;
+    letter-spacing: .1rem;
+}
+.containerForm form p:hover{
+    cursor: pointer;
+}
+.btn{
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    letter-spacing: .1rem;
+    background-color: rgb(16, 173, 225);
+}
+.btn:hover{
+    cursor: pointer;
+}
+
+/* configuracao Pseudoclasses */
+::placeholder{
+    text-align: center;
+}
+
+/* configuracao rodape */
+.containerFt{
+    width: 100%;
+    height: 2rem;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+}
+.containerFt p{
+    color: white;
+    letter-spacing: .1rem;
+}

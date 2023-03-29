@@ -1,0 +1,178 @@
+
+/* Zerando os padroes */
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+
+/* Configuracao do body e main */
+body{
+    @include display(column, center, center);
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../img/Fundo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: $fontFamily;
+
+    // configuracao do bloco central 
+    .containerGeral{
+        @include display(row, center, center);
+        @include resp(mobile){
+            width: 100%;
+        }
+        width: 50%;
+        height: 80%;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        border-radius: 1rem;
+        box-shadow: 0 0 2rem black;
+        position: relative
+    }
+    
+    /* configuracao do logo e texto */
+    .containerLogo{
+        @include display(column, center, center);
+        @include resp(mobile){
+            display: none;
+        }
+        width: 50%;
+        height: 100%;
+        
+        // configuracao do logo (img)
+        .containerLogoImg{
+            width: 100%;
+            height: 50%;
+            img{
+                width: 100%;
+                height: 100%;
+                position: relative;
+                top: 10rem;
+            }
+        }
+        
+        // configuracao do texto (Fit World Gym)
+        .containerLogoTexto{
+            width: 100%;
+            height: 50%;
+            h1{
+                width: 100%;
+                text-align: center;
+                font-size: 3rem;
+                padding: 1rem 0;
+                text-decoration: underline;
+                letter-spacing: .1rem;
+                color: white
+            }
+        }
+    }
+    
+    
+    
+    
+    /* configuracao do formulario e botao */
+    .containerForm{
+        @include display(column, center, center);
+        @include resp(mobile){
+            width: 100%;
+        }
+
+        width: 50%;
+        height: 100%;
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        
+        // configuracao do logo flutuante para Mobile
+            .containerLogoFlutuante{
+                @include display(row, center, center);
+                @include resp(mobile){
+                    visibility: visible;
+                }
+                width: 50%;
+                height: 20%;
+                position: absolute;
+                top: 0;
+                visibility: hidden
+            }
+
+        form{
+            @include display(column, center, center);
+            width: 100%;
+            height: 70%;
+            
+            // configuracao do escrito (Login)
+            .containerLogin{
+                @include display(row, center, center);
+                width: 100%;
+                height: auto;
+                padding: 1rem;
+                text-align: center;
+                h2{
+                    color: white;
+                    letter-spacing: .1rem;
+                    font-size: 2rem;
+                    &::first-letter{
+                        color: red;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+                
+                // configuracao dos inputs e p (mostrar senha)
+                input{
+                    padding: 1rem;
+                    margin: 1rem 0;
+                    border-radius: 1rem;
+                    outline: none;
+                    &::placeholder{
+                        text-align: center;
+                    }
+                }
+                p{
+                    color: white;
+                    font-weight: 600;
+                    letter-spacing: .1rem;
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+
+                // configuracao do Botao
+                .btn{
+                    padding: 1rem 2rem;
+                    margin-top: 2rem;
+                    border-radius: 1rem;
+                    font-family: 'Roboto', sans-serif;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                    color: white;
+                    letter-spacing: .1rem;
+                    background-color: rgb(16, 173, 225);
+                    &:hover{
+                        cursor: pointer;
+                    }
+                }
+            }
+            
+            
+        }
+        
+        /* configuracao rodape */
+            .containerFt{
+                width: 100%;
+                height: 2rem;
+                position: absolute;
+                bottom: 0;
+                text-align: center;
+                p{
+                    color: white;
+                    letter-spacing: .1rem;
+                }
+            }
+    }
